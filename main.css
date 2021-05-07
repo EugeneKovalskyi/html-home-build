@@ -1,0 +1,985 @@
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/ibmplexsans/v8/zYXgKVElMYYaJe8bpLHnCwDKtdY.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/ibmplexsans/v8/zYX9KVElMYYaJe8bpLHnCwDKjWr7MIY.ttf) format('truetype');
+}
+html {
+  font-size: 10px;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+body {
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+section {
+  padding: 8rem 0;
+}
+textarea:focus,
+button:focus,
+input:focus,
+a:focus {
+  outline: none;
+}
+.button {
+  padding: 1rem 3rem;
+  font-size: 1.5rem;
+  color: #fff;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 700;
+  border: 2px solid #fff;
+  border-radius: 1rem;
+  transition: all 0.2s;
+  text-transform: uppercase;
+  background-color: transparent;
+}
+.button:hover {
+  cursor: pointer;
+  color: #01526b;
+  border: 2px solid #01526b;
+  background-color: #fff;
+}
+.main {
+  color: #fff;
+  padding-top: 2rem;
+  padding-bottom: 10rem;
+  font-size: 2rem;
+  background: url(img/blue-bg.jpg) no-repeat center;
+  background-size: cover;
+}
+.main .logo-img {
+  width: 6.4rem;
+  height: 6.4rem;
+}
+.main .phone-wrapper {
+  text-align: right;
+}
+.main .phone-link {
+  color: #fff;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+}
+.main .phone-link:hover {
+  color: #e6e6e6;
+}
+.main-content {
+  margin-top: 10rem;
+}
+.main-content .trigger {
+  display: block;
+  margin-top: 3rem;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+.main-title h1 {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+.main-title span {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 2rem 4rem;
+  color: #002a5a;
+  text-align: center;
+  border: 1px solid #fff;
+  background-color: rgba(255, 255, 255, 0.26);
+  box-shadow: -0.5px -0.5px 3px 1px #fff;
+}
+.main-subtitle {
+  margin-top: 2rem;
+}
+.main-form {
+  padding: 4rem 5rem;
+  text-align: center;
+  box-shadow: 2px 2px 10px 2px #000;
+}
+.main-form h2 {
+  font-size: 2rem;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 700;
+}
+.main-form .input-block {
+  margin-top: 2rem;
+}
+.main-form input {
+  display: block;
+  padding: 1.5rem;
+  font-size: 1.5rem;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 700;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  background-color: transparent;
+}
+.main-form label {
+  font-size: 1.3rem;
+}
+.main-form button {
+  margin-top: 3rem;
+  padding: 1.5rem;
+  text-transform: uppercase;
+}
+.features {
+  color: #00394b;
+  text-align: center;
+  background: url(img/white-bg.jpg) no-repeat center;
+  background-size: cover;
+}
+.features-header {
+  margin-bottom: 4rem;
+  font-size: 3rem;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 700;
+}
+.features-img img {
+  display: inline-block;
+}
+.features-block {
+  margin: 0 2rem;
+}
+.features-block h3 {
+  margin-top: 2rem;
+  font-size: 2rem;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 700;
+}
+.features-block p {
+  font-size: 1.5em;
+}
+.features .slick-arrow {
+  position: absolute;
+  width: 4.8rem;
+  height: 4.8rem;
+  border: none;
+  opacity: 0.3;
+}
+.features .slick-arrow::before {
+  content: none;
+}
+.features .slick-prev {
+  left: 0;
+  background: url('img/arrow-prev.svg') center no-repeat;
+}
+.features .slick-next {
+  right: 0;
+  background: url('img/arrow-next.svg') center no-repeat;
+}
+.price {
+  font-size: 2rem;
+  color: #fff;
+  text-align: center;
+  background: url(img/blue-bg.jpg) no-repeat center;
+  background-size: cover;
+}
+.price h2 {
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 700;
+}
+.price-subtitle {
+  margin-bottom: 2rem;
+}
+.price-block {
+  margin: 2rem 1.5rem;
+  padding: 3rem 0;
+  color: #002a5a;
+  background-color: rgba(255, 255, 255, 0.226);
+  box-shadow: 0 0 5px 5px #fff;
+}
+.price-block h3,
+.price-block p {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 700;
+}
+.price-block img {
+  margin-bottom: 2rem;
+  width: 30rem;
+  height: 20rem;
+}
+.price-block ul {
+  min-height: 11rem;
+  margin: 1rem auto 2rem auto;
+  padding: 0;
+  font-size: 1.5rem;
+  list-style: none;
+}
+.price-block ul li::before {
+  content: '';
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 1rem;
+  vertical-align: middle;
+  background: url(img/checkmark.png) no-repeat center;
+  background-size: 100%;
+}
+.price-count-btn {
+  margin-top: 3rem;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 700;
+  width: 30rem;
+  height: 7rem;
+}
+.feedback {
+  font-size: 2rem;
+  color: #00394b;
+  background: url(img/white-bg.jpg) no-repeat center;
+  background-size: cover;
+}
+.feedback h2 {
+  margin-bottom: 5rem;
+  font-size: 3rem;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+.feedback-slider {
+  padding: 5rem 6rem;
+  line-height: 1;
+  box-shadow: 2px 2px 15px 3px #000;
+}
+.feedback-slider .fotorama {
+  margin-bottom: 3rem;
+}
+.feedback-slider .media {
+  margin-top: 3rem;
+}
+.feedback-slider .media img {
+  border-radius: 50%;
+}
+.feedback-slider .media-body {
+  margin-left: 1rem;
+}
+.feedback-slider .media-body span {
+  font-size: 1.5rem;
+}
+.feedback-slider .media-body h5 {
+  font-size: 2rem;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 700;
+}
+.feedback-slider .feedback-text {
+  position: relative;
+  font-size: 1.5rem;
+  margin-top: 3rem;
+  padding: 1rem;
+  color: #000;
+  border: 3px solid #00afea;
+  border-radius: 5px;
+}
+.feedback-slider .feedback-text ::before {
+  content: '';
+  position: absolute;
+  left: 6rem;
+  top: -3rem;
+  width: 3rem;
+  height: 3rem;
+  border: 2px solid #00afea;
+  border-top-right-radius: 100%;
+  border-bottom: none;
+}
+.feedback-slider .feedback-text p {
+  margin: 0;
+}
+.feedback-form {
+  margin-top: 10rem;
+  text-align: center;
+}
+.feedback-form h2 {
+  font-size: 3rem;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 700;
+  text-transform: none;
+}
+.feedback-form form .name-block {
+  margin-right: 2rem;
+  text-align: right;
+}
+.feedback-form form .phone-block {
+  margin-left: 2rem;
+  text-align: left;
+}
+.feedback-form form .input-block {
+  position: relative;
+  display: inline-block;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 700;
+}
+.feedback-form form .input-block input {
+  padding: 1.5rem;
+  color: #01526b;
+  font-weight: inherit;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  box-shadow: 2px 2px 10px 2px #000;
+  background-color: transparent;
+}
+.feedback-form form .input-block input:focus {
+  border: 2px solid #00afea;
+}
+.feedback-form form .input-block label {
+  position: absolute;
+  left: 1.8rem;
+  top: 1.7rem;
+  transition: top 0.2s ease-in, left 0.2s, font-size 0.2s ease-in;
+}
+.feedback-form form .input-block label:hover {
+  cursor: text;
+}
+.feedback-form form .input-block input:focus ~ label,
+.feedback-form form .input-block input:not(:placeholder-shown) ~ label {
+  top: -2.2rem;
+  left: 1.5rem;
+  font-size: 1.5rem;
+}
+.feedback-form form button {
+  margin-top: 3rem;
+  width: 25%;
+  max-width: 40rem;
+  box-shadow: 2px 2px 10px 2px #000;
+  border: 2px solid #fff;
+  background-color: #00afea;
+  color: #fff;
+}
+.feedback-form form button:hover {
+  color: #00afea;
+  border: 2px solid #00afea;
+  background-color: #fff;
+}
+.feedback-slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 5rem;
+  border: none;
+  background: transparent;
+  opacity: 0.8;
+}
+.feedback-prev-btn {
+  left: -5rem;
+}
+.feedback-next-btn {
+  right: -5rem;
+}
+.scheme {
+  position: relative;
+  color: #fff;
+  text-align: left;
+  background: url(img/blue-bg.jpg) no-repeat center;
+  background-size: cover;
+}
+.scheme-header {
+  text-align: center;
+}
+.scheme-header h2 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 700;
+}
+.scheme-header p {
+  font-size: 2rem;
+  margin: 3rem 0;
+}
+.scheme img {
+  margin-top: 5rem;
+}
+.scheme h3 {
+  font-size: 2rem;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 700;
+}
+.scheme .description {
+  font-size: 1.5rem;
+}
+.scheme-man {
+  position: absolute;
+  right: 10%;
+  bottom: 5rem;
+  width: 25rem;
+}
+.inclusive {
+  padding-top: 10rem;
+  font-size: 2rem;
+  color: #00394b;
+  background: url(img/white-bg.jpg) no-repeat center;
+  background-size: cover;
+}
+.inclusive-header {
+  text-align: center;
+}
+.inclusive-header h2 {
+  margin-bottom: 3rem;
+  font-size: 3rem;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 700;
+}
+.inclusive-block {
+  margin-top: 5rem;
+  margin-left: 1rem;
+}
+.inclusive-block .circle-border {
+  display: flex;
+  float: left;
+  padding: 0.2rem;
+  width: 5rem;
+  height: 5rem;
+  text-align: center;
+  line-height: 4rem;
+  border: 3px solid #008598;
+  border-radius: 50%;
+}
+.inclusive-block .circle {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  font-size: 2rem;
+  color: #fff;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 700;
+  background-color: #008598;
+}
+.inclusive-block h3 {
+  display: flex;
+  padding-left: 1rem;
+  min-height: 5rem;
+  align-items: center;
+  font-size: 1.7rem;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 700;
+}
+.problems {
+  color: #fff;
+  background: url(img/blue-bg.jpg) no-repeat center;
+  background-size: cover;
+  position: relative;
+}
+.problems-header h2 {
+  margin-bottom: 4rem;
+  font-size: 3rem;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 700;
+  text-align: center;
+}
+.problems-list {
+  margin-top: 4rem;
+}
+.problems-list h4 {
+  padding: 2rem;
+  font-size: 2rem;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 700;
+}
+.problems-list ul {
+  padding: 0 2rem;
+  list-style: none;
+  font-size: 1.7rem;
+}
+.problems-list ul li {
+  position: relative;
+  margin-bottom: 2rem;
+  padding-left: 4rem;
+}
+.problems-list ul li::before {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 3rem;
+  height: 3rem;
+}
+.problems-list_bad {
+  border: 0.5rem solid hsla(0, 0%, 100%, 0.26);
+}
+.problems-list_bad h4 {
+  color: hsla(0, 0%, 100%, 0.26);
+}
+.problems-list_bad li::before {
+  background: url(img/problems/crossmark.png) no-repeat center;
+  background-size: cover;
+}
+.problems-list_good {
+  line-height: 1.2;
+  border: 0.5rem solid #00394b;
+}
+.problems-list_good li::before {
+  background: url(img/problems/checkmark.png) no-repeat center;
+  background-size: cover;
+}
+.problems-girl {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-47%);
+  height: 35rem;
+}
+.materials {
+  font-size: 1.7rem;
+  color: #00394b;
+  text-align: center;
+  background: url(img/white-bg.jpg) no-repeat center;
+  background-size: cover;
+}
+.materials-header h2 {
+  margin-bottom: 4rem;
+  font-size: 3rem;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 700;
+}
+.materials-header p {
+  margin-bottom: 5rem;
+  font-size: 2rem;
+}
+.materials-block {
+  text-align: center;
+}
+.materials-block img {
+  display: block;
+  margin: 0 auto;
+}
+.materials-block h3 {
+  margin-top: 2rem;
+  font-size: 2rem;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 700;
+}
+.materials-block a {
+  text-decoration: none;
+  border-bottom: 2px dotted #4282e1;
+}
+.materials-block a:hover {
+  color: #2167cf;
+}
+.materials-offer a {
+  text-decoration: none;
+}
+.materials-offer strong {
+  white-space: nowrap;
+}
+.materials .slick-arrow {
+  position: absolute;
+  width: 4.8rem;
+  height: 4.8rem;
+  border: none;
+  opacity: 0.3;
+}
+.materials .slick-arrow::before {
+  content: none;
+}
+.materials .slick-prev {
+  left: 0;
+  background: url('img/arrow-prev.svg') center no-repeat;
+}
+.materials .slick-next {
+  right: 0;
+  background: url('img/arrow-next.svg') center no-repeat;
+}
+.materials-offer {
+  margin-top: 5rem;
+}
+.tour {
+  position: relative;
+  font-size: 1.7rem;
+  color: #fff;
+  background: url(img/blue-bg.jpg) no-repeat center;
+  background-size: cover;
+}
+.tour-title {
+  padding-top: 3rem;
+}
+.tour-title h2 {
+  margin-bottom: 3rem;
+  font-size: 3rem;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.tour-subtitle {
+  margin-bottom: 3rem;
+}
+.tour-form {
+  padding: 4rem 5rem;
+  text-align: center;
+  box-shadow: 2px 2px 10px 2px #000;
+}
+.tour-form h2 {
+  font-size: 2rem;
+  color: #fff;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 700;
+}
+.tour-form .input-block {
+  margin-top: 2rem;
+}
+.tour-form input {
+  display: block;
+  padding: 1.5rem;
+  font-size: 1.3rem;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  background-color: transparent;
+}
+.tour-form label {
+  font-size: 1.3rem;
+}
+.tour-form button {
+  margin-top: 3rem;
+  padding: 1.5rem;
+  text-transform: uppercase;
+}
+.tour-man {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 30rem;
+}
+.upsell {
+  font-size: 2rem;
+  color: #00394b;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 700;
+  text-align: center;
+  background: url(img/white-bg.jpg) no-repeat center;
+  background-size: cover;
+}
+.upsell-header h2 {
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 700;
+}
+.upsell-header p {
+  margin-bottom: 4rem;
+}
+.upsell-block {
+  margin-top: 2rem;
+}
+.upsell-block p {
+  margin: 2rem auto;
+}
+.upsell-block img {
+  box-shadow: 2px 2px 10px 2px #000;
+}
+.upsell-block button {
+  color: #01526b;
+  border: 2px solid #01526b;
+}
+.upsell-block button:hover {
+  color: #fff;
+  border: 2px solid #fff;
+  background-color: #01526b;
+}
+.contacts {
+  font-size: 1.7rem;
+  color: #fff;
+  background: url(img/blue-bg.jpg) no-repeat center;
+  background-size: cover;
+}
+.contacts .map {
+  margin-top: 2rem;
+}
+.contacts .map-iframe {
+  width: 100%;
+  height: 30rem;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 2px #000;
+}
+.contacts-content h2 {
+  margin-bottom: 4rem;
+  font-size: 3rem;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 700;
+}
+.contacts-content p {
+  margin-top: 2rem;
+}
+.contacts-link {
+  text-decoration: none;
+  color: #fff;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 700;
+  border-bottom: 1px dotted #fff;
+}
+.contacts-link:hover {
+  color: #003b4b;
+  border-bottom-color: #003b4b;
+}
+.contacts-form {
+  padding: 3rem 4rem;
+  text-align: center;
+  box-shadow: 2px 2px 10px 2px #000;
+}
+.contacts-form h2 {
+  font-size: 2rem;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 700;
+}
+.contacts-form .input-block {
+  margin-top: 2rem;
+}
+.contacts-form input,
+.contacts-form textarea {
+  display: block;
+  padding: 1.5rem;
+  font-size: 1.3rem;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  background-color: transparent;
+}
+.contacts-form label {
+  font-size: 1.3rem;
+}
+.contacts-form button {
+  margin-top: 3rem;
+  padding: 1.5rem;
+  text-transform: uppercase;
+}
+.footer {
+  padding: 4rem 0;
+  font-size: 2rem;
+  color: #00394b;
+}
+.footer .logo-img {
+  width: 64px;
+  height: 64px;
+}
+.footer p {
+  text-align: center;
+  margin-bottom: 0;
+}
+.footer a {
+  color: #00394b;
+  text-decoration: none;
+}
+.footer a:hover {
+  color: #0087b1;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 700;
+}
+.footer .github-link {
+  text-align: right;
+}
+.footer .github-link img {
+  margin-right: 5rem;
+}
+.popup {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9;
+}
+.popup .popup-close-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 2rem;
+  color: #aaa;
+  border: none;
+  background-color: transparent;
+}
+.popup-content {
+  position: fixed;
+  left: 50%;
+  top: 10%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  padding: 4rem 5rem;
+  text-align: center;
+}
+.popup-content h4 {
+  font-size: 2rem;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 700;
+}
+.popup-content p {
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
+}
+.popup-content form input,
+.popup-content form textarea {
+  margin-bottom: 3rem;
+  display: block;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 1.5rem;
+  font-size: 1.3rem;
+}
+.popup-content form label {
+  position: absolute;
+  padding: 0.5rem;
+  transform: translateX(-50%) translateY(-50%);
+  background-color: #fff;
+  font-size: 1.3rem;
+}
+.popup-content form button {
+  padding: 1.5rem;
+  font-size: 2rem;
+  color: #01526b;
+  text-transform: uppercase;
+  border: 2px solid #01526b;
+}
+.popup-content form button:hover {
+  color: #fff;
+  background-color: #01526b;
+}
+@media (min-width: 1200px) {
+  .scheme-man {
+    right: 17%;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .price img {
+    width: 100%;
+  }
+  .problems-list {
+    min-height: 36rem;
+  }
+  .upsell-block img {
+    max-width: 28rem;
+  }
+}
+@media (max-width: 991px) {
+  .main-header .logo-text {
+    display: none;
+  }
+  .main-header .phone-wrapper {
+    text-align: center;
+  }
+  .main-content {
+    margin-top: 3rem;
+  }
+  .main-content .trigger {
+    margin-top: 1.5rem;
+  }
+  .main-title {
+    text-align: center;
+  }
+  .main-subtitle {
+    margin: 0;
+  }
+  .main-form {
+    margin-top: 3rem;
+  }
+  .feedback-prev-btn {
+    left: 0;
+  }
+  .feedback-next-btn {
+    right: 0;
+  }
+  .feedback-form form input {
+    width: 100%;
+  }
+  .feedback-form form button {
+    width: 50%;
+  }
+  .inclusive-block {
+    margin-top: 3rem;
+  }
+  .problems-header h2 {
+    margin-bottom: 2rem;
+  }
+  .problems-list {
+    min-height: auto;
+  }
+  .problems-girl {
+    display: none;
+  }
+  .tour-title {
+    text-align: center;
+  }
+  .tour-form {
+    margin-top: 3rem;
+  }
+  .tour-man {
+    display: none;
+  }
+  .upsell-header p {
+    margin-bottom: 0;
+  }
+  .upsell-block {
+    margin-top: 6rem;
+  }
+  .upsell-block p {
+    margin: 1rem auto;
+  }
+  .contacts {
+    text-align: center;
+  }
+  .contacts-form {
+    margin-top: 3rem;
+  }
+}
+@media (max-width: 767px) {
+  .main-header .logo {
+    text-align: center;
+  }
+  .main-header .logo .logo-text {
+    display: block;
+  }
+  .main-header .button {
+    padding: 1rem;
+  }
+  .scheme {
+    text-align: center;
+  }
+  .scheme-man {
+    display: none;
+  }
+  .inclusive-block {
+    margin-top: 2rem;
+  }
+  .footer {
+    text-align: center;
+  }
+  .footer .logo-img {
+    margin-bottom: 3rem;
+  }
+  .footer .github-link {
+    margin-top: 3rem;
+    text-align: center;
+  }
+  .footer .github-link img {
+    margin: 0;
+  }
+}
+@media (max-width: 575px) {
+  .main {
+    background-position: top left;
+  }
+  .main-header {
+    text-align: center;
+  }
+  .main-header .phone-wrapper {
+    margin: 1rem auto;
+    text-align: center;
+  }
+  .price-block {
+    margin: 2rem 0;
+  }
+  .price-block img {
+    width: 100%;
+  }
+}
